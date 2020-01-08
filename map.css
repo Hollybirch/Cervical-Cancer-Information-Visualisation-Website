@@ -1,0 +1,641 @@
+.sidenav {
+    height: 100%;
+    width: 20%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: white;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+div.fixed
+{
+    position: fixed;
+    top: 20px;
+}
+
+#CervicalCancerMap {
+    height: 850px; 
+    min-width: 710px; 
+    max-width: 1300px; 
+    margin-left: auto;
+    margin-right: 15%;
+    margin-bottom: 3%;
+}
+
+#play-controls {
+    text-align: center;
+    min-width: 310px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 5px 0 1em 0;
+}
+#play-controls * {
+    display: inline-block;
+    vertical-align: middle;
+}
+#PlayPause {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+    border: 1px solid silver;
+    border-radius: 3px;
+    background: #f8f8f8;
+
+}
+  
+input[type="checkbox"] {
+      content: url(u26.png);
+      height: 15px; 
+      max-width: 20px;
+  }
+
+  input[type="checkbox"]:checked {
+      display:none;
+      content: url(pause.jpg);
+      height: 15px;
+      max-width: 20px;
+  }
+
+#play-range {
+    margin: 2.5%;
+    width: 70%;
+}
+#play-output {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#checkbutton1 {
+    margin:4px;
+    background-color:#EFEFEF;
+    border-radius:4px;
+    border:1px solid #D0D0D0;
+    overflow:auto;
+    float:left;
+}
+
+#checkbutton1 label {
+    float:left;
+    width:13.0em;
+}
+
+#checkbutton1 label span {
+    text-align:center;
+    font-family: Arial;
+    font-size: medium;
+    padding:10px 0px;
+    display:block;
+}
+
+#checkbutton1 label input {
+    position:absolute;
+    top:-20px;
+}
+
+#checkbutton1 input:checked + span {
+    background-color:#060a82;
+    color:#fff;
+}
+#checkbutton2 {
+    margin:4px;
+    background-color:#EFEFEF;
+    border-radius:4px;
+    border:1px solid #D0D0D0;
+    overflow:auto;
+    float:left;
+}
+
+#checkbutton2 label {
+    float:left;
+    width:13.0em;
+}
+
+#checkbutton2 label span {
+    text-align:center;
+    font-family: Arial;
+    font-size: medium;
+    padding:10px 0px;
+    display:block;
+}
+
+#checkbutton2 label input {
+    position:absolute;
+    top:-20px;
+}
+
+#checkbutton2 input:checked + span {
+    background-color: #060a82;
+    color:#fff;
+}
+
+#checkbutton3 {
+    margin:4px;
+    background-color:#EFEFEF;
+    border-radius:4px;
+    border:1px solid #D0D0D0;
+    overflow:auto;
+    float:left;
+}
+
+#checkbutton3 label {
+    float:left;
+    width:13.0em;
+}
+
+#checkbutton3 label span {
+    text-align:center;
+    font-family: Arial;
+    font-size: medium;
+    padding:10px 0px;
+    display:block;
+}
+
+#checkbutton3 label input {
+    position:absolute;
+    top:-20px;
+}
+
+#checkbutton3 input:checked + span {
+    background-color: #060a82;
+    color:#fff;
+}
+
+#checkbutton4 {
+    margin:4px;
+    background-color:#EFEFEF;
+    border-radius:4px;
+    border:1px solid #D0D0D0;
+    overflow:auto;
+    float:left;
+}
+
+#checkbutton4 label {
+    float:left;
+    width:13.0em;
+}
+
+#checkbutton4 label span {
+    text-align:center;
+    font-family: Arial;
+    font-size: medium;
+    padding:10px 0px;
+    display:block;
+}
+
+#checkbutton4 label input {
+    position:absolute;
+    top:-20px;
+}
+
+#checkbutton4 input:checked + span {
+  background-color: #060a82;
+  color:#fff;
+}
+
+#checkbutton5 input:checked + span {
+    background-color: #060a82;
+    color:#fff;
+}
+
+#checkbutton5 {
+  margin:4px;
+  background-color:#EFEFEF;
+  border-radius:4px;
+  border:1px solid #D0D0D0;
+  overflow:auto;
+  float:left;
+
+}
+
+#checkbutton5 label {
+  float:left;
+  width:13.0em;
+}
+
+#checkbutton5 label span {
+  text-align:center;
+  font-family: Arial;
+  font-size: medium;
+  padding:10px 0px;
+  display:block;
+}
+
+#checkbutton5 label input {
+  position:absolute;
+  top:-20px;
+}
+
+#checkbutton5 input:checked + span {
+  background-color: #060a82;
+  color:#fff;
+}
+
+#checkbutton6 {
+  margin:4px;
+  background-color:#EFEFEF;
+  border-radius:4px;
+  border:1px solid #D0D0D0;
+  overflow:auto;
+  float:left;
+}
+
+#checkbutton6 label {
+  float:left;
+  width:13.0em;
+}
+
+#checkbutton6 label span {
+  text-align:center;
+  font-family: Arial;
+  font-size: medium;
+  padding:10px 0px;
+  display:block;
+}
+
+#checkbutton6 label input {
+  position:absolute;
+  top:-20px;
+}
+
+#checkbutton6 input:checked + span {
+  background-color: #060a82;
+  color:#fff;
+}
+
+#checkbutton10 label {
+  float:left;
+  width:13.0em;
+}
+
+#checkbutton10 label span {
+  text-align:center;
+  font-family: Arial;
+  font-size: medium;
+  padding:10px 0px;
+  display:block;
+}
+
+#checkbutton10 label input {
+  position:absolute;
+  top:-20px;
+}
+
+#checkbutton10 input:checked + span {
+  background-color: green;
+  color:#fff;
+}
+
+#checkbutton10 {
+  margin:4px;
+  background-color:#EFEFEF;
+  border-radius:4px;
+  border:1px solid #D0D0D0;
+  overflow:auto;
+  float:left;
+}
+
+#checkbutton11 label {
+  float:left;
+  width:13.0em;
+}
+
+#checkbutton11 label span {
+  text-align:center;
+  font-family: Arial;
+  font-size: medium;
+  padding:10px 0px;
+  display:block;
+}
+
+#checkbutton11 label input {
+  position:absolute;
+  top:-20px;
+}
+
+#checkbutton11 input:checked + span {
+  background-color: red;
+  color:#fff;
+}
+
+
+#checkbutton11 {
+  margin:4px;
+  background-color:#EFEFEF;
+  border-radius:4px;
+  border:1px solid #D0D0D0;
+  overflow:auto;
+  float:left;
+}
+
+#display {
+    text-align:center;
+    font-family: Arial;
+    width:13.0em;
+    padding:3px 0px;
+    font-size: medium;
+    border-radius:4px;
+    border:1px solid #D0D0D0;
+     padding:10px 0px;
+    margin:4px;
+
+}
+
+#display:hover {
+    background-color: #060a82; 
+    color: white;
+  }
+
+#dropdown {
+    text-align:center;
+    font-family: Arial;
+    width:13.0em;
+    padding:10px 0px;
+    font-size: medium;
+    border-radius:4px;
+    border:1px solid #D0D0D0;
+    margin:4px;
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
+  
+  /* Style the buttons that are used to open the tab content */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 16px 18px;
+    transition: 0.3s;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #ccc;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 8px 14px;
+    border-top: none;
+  }
+
+  /* Create two columns next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 5px;
+    
+  }
+  
+  /* Clear float after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout */
+  @media screen and (max-width:600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+  *{
+    box-sizing: border-box;
+  }
+
+  #ScreeningDecreasing {
+    float:right;
+  
+  }
+
+  #screeningQuestion {
+
+    font-family: Arial;
+    font-size: 36px;
+    font-weight: bold;
+    text-align:center;
+    color : #060a82;
+    float:left;
+
+  }
+
+  #radio {
+    font-family: Arial;
+    font-size: x-large;
+    float: left;
+
+  }
+
+  #viewAllReasonsDiv {
+    width : 100%;
+    text-align: center;
+    font-size: large;
+    font-family: Arial;
+    bottom: 125%;
+  }
+
+  #viewAllReasonsButton{
+    text-align: center;
+    font-size: large;
+    font-family: Arial;
+    height: 35px;
+    width: 180px;
+    border-radius:4px;
+  }
+
+  #viewAllReasonsButton:hover{
+    background-color: #060a82; 
+    color: white;
+  }
+
+  input[type="radio"]{
+    margin: 30px 20px 10px 0px;
+
+  }
+
+    /* Create three columns next to each other */
+.column2 {
+  float: left;
+  width: 33.3%;
+  padding: 15px;
+  
+}
+
+/* Clear float after the columns */
+.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout */
+@media screen and (max-width:600px) {
+  .column2 {
+    width: 100%;
+  }
+}
+
+*{
+  box-sizing: border-box;
+}
+    /* Create three columns next to each other */
+    .column3 {
+      float: left;
+      width: 33.3%;
+      padding: 5px;
+      
+    }
+    
+    /* Clear float after the columns */
+    .row3:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* Responsive layout */
+    @media screen and (max-width:600px) {
+      .column3 {
+        width: 100%;
+      }
+    }
+    
+    *{
+      box-sizing: border-box;
+    }
+    /* Create three unequal columns that floats next to each other */
+.column4 {
+  float: left;
+ padding: 5px;
+}
+
+.column4.left {
+  width:25%;
+}
+
+.column4.right {
+  width:75%;
+}
+
+/* Clear floats after the columns */
+.row4:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.left, .column.right {
+    width: 100%;
+  }
+}
+body {
+  border: 5px solid lightgray;
+  }
+    
+  .column7 {
+    float: left;
+   padding: 5px;
+  }
+  
+  .column7.left {
+    width:85%;
+  }
+  
+  .column7.right {
+    width:15%;
+  }
+  
+  /* Clear floats after the columns */
+  .row5:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .row6:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column.left, .column.right {
+      width: 100%;
+    }
+  }
+.sidenav {
+  margin-top: 3.5%;
+  margin-right: 2%;
+}
+
+.sidenavtitles {
+ font-family: Arial;
+ font-size: x-large;
+ color: #060a82; 
+ font-weight: bold;
+
+
+}
+
+#refs{
+  font-family: Arial;
+  font-size: large;
+
+}
+
+#reftitle{
+font-family: Arial;
+font-size: xx-large;
+color: #060a82; 
+font-weight: bold;
+
+}
+
+.box {
+height: 20px;
+width: 20px;  
+border: 1px solid black;
+}
+   
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+#whytabtitle{
+margin-top: 1%;
+text-align: center;
+font-family: Arial;
+font-size: 65px;
+color: #060a82; 
+font-weight: bold;
+
+}
+
+#Discussion{
+  font-family: Arial;
+  font-size: 20px;
+
+}

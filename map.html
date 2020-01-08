@@ -1,0 +1,253 @@
+<!DOCTYPE HTML>
+<html lang="en">
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<script src="https://code.highcharts.com/maps/highmaps.js"></script>
+		<script src="https://code.highcharts.com/maps/modules/data.js"></script>
+		<script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+		<script src="https://code.highcharts.com/mapdata/custom/world.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+		<script src="https://code.highcharts.com/modules/export-data.js"></script>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="map.css">
+		<script src="map.js"> </script>
+
+<head></head>
+<body>
+
+<div class="tab">
+	<button id="Why" class = "tablinks">Why?</button>
+	<button id="Screening" class="tablinks">Screening</button>
+	<button id="Map" class="tablinks">Map</button>
+	<button id="RelatedDiseases" class="tablinks">Risk Factors</button>
+	<button id="References" class="tablinks">References</button>
+</div>
+
+<div id="MapTab" class="tabcontent">
+	<div class="row5">
+		<div class="column7 left"><br>
+	<div id="CervicalCancerMap" style="min-height: 700px; min-width: 1300px; max-width: 1800px;"></div>
+
+	</div>
+	</div>
+	<div class="row6"></div>
+	<div class="column7 right"><br>
+	<div class="sidenav" style="height: 850px; min-width: 500px; max-width: 1200px;"> 
+		<p class= "sidenavtitles">Indicator:</p> 
+		<div id = "checkbutton1">
+			<label>
+			<input id= "Incidence" type="checkbox" name="First" checked> <span>Incidence</span>
+			</label>
+		</div>
+
+		<div id="checkbutton2">
+			<label>
+			<input id= "Mortality" type="checkbox" name="First"><span>Mortality</span>
+			</label>  
+		</div> 
+		<br><br>
+		<br><br>
+		<p class= "sidenavtitles">Site of Cancer:</p> 
+		<div id= "checkbutton3">
+			<label>
+			<input id= "CervicalCancer" type="checkbox" name="Second" checked><span>Cervical Cancer</span>
+			</label>
+		</div>
+
+		<div id="checkbutton4">
+			<label>
+			<input id= "AllCancers" type="checkbox" name="Second"><span>All Cancers</span>
+			</label>
+			
+		</div>
+
+
+		<br><br>
+		<br><br>
+		<p class= "sidenavtitles">Age Selection:</p> 
+		<select id="dropdown">
+			<option>20-24</option>
+			<option>25-29</option>
+			<option>30-34</option>
+			<option>35-39</option>
+			<option>40-44</option>
+			<option>45-49</option>
+			<option>50-54</option>
+			<option>55-59</option>
+			<option>60-64</option>
+			<option>65-69</option>
+			<option>70-74</option>
+		</select>
+
+		<button id="display">Display</button><br>
+		<br><br>
+
+		<p class= "sidenavtitles">Play Through Ages:</p> 
+
+		<div id="play-controls">
+			<input type = "checkbox" id="PlayPause" class="fa fa-play" title="play"/>
+			<input id="play-range" type="range" value="0" min="0" max="14" />
+			<output id="play-output" for="play-range" name="year">0-19</output>
+
+		</div>
+		<br><br>	
+		<p class= "sidenavtitles">Programmes Available:</p> 
+		<div id = "checkbutton5">
+			<label>
+			<input id= "ScreeningA" type="checkbox" name="First"> <span>Screening Available?</span>
+			</label>
+		</div>
+		
+		<div id = "checkbutton6">
+			<label>
+			<input id= "HPVA" type="checkbox" name="First"> <span>HPV Available?</span>
+			</label>
+		</div>
+		
+		<br><br>
+		<br><br>
+
+		<div id= "checkbutton10" hidden = "true">
+				<label>
+				<input id= "Yes" type="checkbox" name="Third" checked><span>Yes</span>
+				</label>
+			</div>
+	
+			<div id="checkbutton11" hidden = "true">
+				<label>
+				<input id= "No" type="checkbox" name="Third" checked><span>No</span> 
+				</label>
+				
+		</div>
+
+	
+</div>
+</div>
+
+</div>
+
+<div id="RelatedDiseasesTab" class="tabcontent">
+	<div class="row2">
+	<div class="column2"><br>
+	<div id="CervicalCancerHIVStat"> <img src="pic1.jpg" alt="home" style="height: 400px; min-width: 400px; max-width: 400px;  margin-left: 13%;"></div>
+	</div>
+	<div class="column2"><br>
+	<div id="CervicalCancerSex"> <img src="pic2.jpg" alt="home" style="height: 400px; min-width: 400px; max-width: 400px; margin-left: 7%;"></div>
+	</div>
+	<div class="column2"><br>
+		<div id="CervicalCancerSmoking"> <img src="pic3.jpg" alt="home" style="height: 400px; min-width: 400px; max-width: 400px; margin-left: 7%;"></div>
+	</div>
+	</div>
+
+	<div class="row3">
+			<div class="column3"><br>
+			<div id="CervicalCancerPill"> <img src="pic4.jpg" alt="home" style="height: 400px; min-width: 400px; max-width: 400px;  margin-left: 13%; margin-top:5%;"></div>
+			</div>
+			<div class="column2"><br>
+			<div id="CervicalCancerChild"> <img src="pic5.jpg" alt="home" style="height:400px; min-width: 400px; max-width: 400px; margin-left: 7%; margin-top:5%;"></div>
+			</div>
+			<div class="column2"><br>
+				<div id="CervicalCancerYoung"> <img src="pic6.jpg" alt="home" style="height: 400px; min-width: 400px; max-width: 400px;  margin-left: 7%; margin-top:5%;"></div>
+			</div>
+			</div>
+
+</div>
+
+<div id="ScreeningTab" class="tabcontent">
+
+	<div class="row4">
+		<div class="column4 left"><br>
+			<div id="CervicalCancerprevention"> <img src="preventable.jpg" alt="home" style=" margin-left:10%; margin-top:20%;  min-height: 750px; max-height: 950px; min-width: 500px; max-width: 600px;"></div>
+		</div>
+		<div class="column4 right">
+			<div id="ScreeningDecreasing" style=" margin-top: 5%; margin-bottom:5%; margin-right:5%; min-height: 750px; max-height: 950px; min-width: 1100px; max-width: 1300px;"></div>
+		</div>
+	</div>
+
+
+</div>
+
+
+
+<div id="ReferencesTab" class="tabcontent">
+	<h1 id = "reftitle"> References </h1>
+	<div id ="refs">
+	WHO - Smoking Prevelance <br><br>
+<a href = "http://apps.who.int/gho/data/view.sdg.3-a-data-reg?lang=en">http://apps.who.int/gho/data/view.sdg.3-a-data-reg?lang=en</a><br><br>
+	World Fertility Patterns 2015 <br><br>
+<a href = "http://www.un.org/en/development/desa/population/publications/pdf/fertility/world-fertility-patterns-2015.pdf">http://www.un.org/en/development/desa/population/publications/pdf/fertility/world-fertility-patterns-2015.pdf</a><br><br>
+	Cervical Cancer Incidence Trends Over Time<br><br>
+<a href = "https://www.cancerresearchuk.org/health-professional/cancer-statistics/statistics-by-cancer-type/cervical-cancer/incidence#heading-Two">https://www.cancerresearchuk.org/health-professional/cancer-statistics/statistics-by-cancer-type/cervical-cancer/incidence#heading-Two</a><br><br>
+	Jos Cervical Cancer Trust<br><br>
+<a href = "https://www.jostrust.org.uk/">https://www.jostrust.org.uk/</a><br><br>
+	WHO - Cervical Cancer Information<br><br>
+<a href = "https://www.who.int/cancer/prevention/diagnosis-screening/cervical-cancer/en/">https://www.who.int/cancer/prevention/diagnosis-screening/cervical-cancer/en/</a><br><br>
+	NHS - Reasons for Not Attending Screening<br><br>
+<a href = "https://www.nhs.uk/news/cancer/one-three-women-dont-attend-cervical-screening-because-embarrassment/">https://www.nhs.uk/news/cancer/one-three-women-dont-attend-cervical-screening-because-embarrassment/</a><br><br>
+	WHO - Countries using HPV Vaccine<br><br>
+<a href = "https://www.who.int/immunization/diseases/hpv/decision_implementation/en/">https://www.who.int/immunization/diseases/hpv/decision_implementation/en/</a><br><br>
+	WHO - Cancer Incidence Worldwide<br><br>
+<a href = "http://ci5.iarc.fr/CI5plus/Pages/online.aspx">http://ci5.iarc.fr/CI5plus/Pages/online.aspx</a><br><br>
+	WHO - Cancer Mortality Database<br><br>
+<a href = "http://www-dep.iarc.fr/WHOdb/WHOdb.htm">http://www-dep.iarc.fr/WHOdb/WHOdb.htm</a><br><br>
+</div>
+<h1>Discussion of Sources</h1>
+<div id="Discussion">
+		NHS Why People Don't Attend Screening <br><br>
+		The information taken from the NHS website is relatable and results could bring comfort to women who also feel the same way about attending cervical cancer screening. Quotes used surrounding the study may offer reassurance to women that are not sure about attending the screening programme. The study did not specify who the women were that were recruited from across the UK, it did not state either the age groups or socio-economic groups used and therefore it is unclear how representative the results are.
+		<br><br>
+		WHO Incidence and Mortality Figures <br> <br>
+		The WHO website offered incidence and mortality figures over time. All data was presented by age-standardised rate (ASR) which made everything comparable. There were vast amounts of data meaning age ranges for incidence and mortality could also be collected. Data was not available for all countries and some countries had certain data unavailable which created some gaps when the data was portrayed over a time frame. The data had to be downloaded individually for each country and then concatenated together to form the whole dataset, although achievable this was a time consuming task. HPV and screening information was also obtained from the WHO website and there was also the limitation of data not being present for certain countries. However, for both the HPV vaccination and screening, the data was mostly available up to 2017. The formatting of the HPV and screening data was not always standardised as yes, no or not available. Some fields had to be altered to ensure that only this information was present for construction of the information visualisation map.
+		<br><br>
+		Cancer Research
+		<br><br>
+		The data presented by the Cancer Research website was clearly laid out with information graphics that convey the relevant information and also reference where the data has originated from enabling further exploration.
+		<br><br>
+		Jos cancer trust risk factors
+		<br><br>
+		clearly states associated risk factors with the disease and provides additional information surrounding the topic. Information was found to be quite brief on this website though.
+		
+</div>
+</div>
+
+<div id="WhyTab" class="tabcontent">
+	<div id="whytabtitle">Cervical Cancer Screening</div>
+	<div class="row">
+		<div class="column">
+				<p id="screeningQuestion" style="margin-left: 15%; margin-top:10%; text-align: center;">Why wouldn't you attend? </p><br><br>
+	
+				<div id="radio" style="margin-left: 15%;">
+		
+					<input type="radio" id= "rbutton1" class= "radiobutton" name="why" value = "1"> You feel embarrassed<br><br>
+		
+					<input type="radio" id= "rbutton2" class= "radiobutton" name="why" value = "2"> You haven't shaved or waxed your bikini area<br><br>
+		
+					<input type="radio" id= "rbutton3" class= "radiobutton" name="why" value = "3"> You would not attend if you had to take time off of work<br><br>
+		
+					<input type="radio" id= "rbutton4" class= "radiobutton" name="why" value = "4"> You would not go if you had to miss the gym<br><br>
+		
+					<input type="radio" id= "rbutton5" class= "radiobutton" name="why" value = "5"> You think it is too difficult to make an appointment<br><br>
+		
+					<input type="radio" id= "rbutton6" class= "radiobutton" name="why" value = "6"> You don't know where to go for cervical screening<br><br>
+		
+					<input type="radio" id= "rbutton7" class= "radiobutton" name="why" value = "7"> You would rather not know if something was wrong<br><br>
+		
+					<div id= "viewAllReasonsDiv"><br><br>
+						
+						<button id="viewAllReasonsButton"> View all reasons</button>
+					
+					</div>
+			
+		</div>
+	</div>
+		<div class="column"><br>
+			
+			<img style="margin-right: 30%; margin-top:5%; min-height: 700px; min-width: 700px; max-height: 900px; max-width:900px" alt="whyimage" class="whyimage"  src="slide7.jpg">
+	
+			</div>
+		</div>
+</div>
+
+</body>
+
+</html>

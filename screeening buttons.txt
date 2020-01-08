@@ -1,0 +1,65 @@
+
+
+
+
+
+
+<h1> What is the most likely reason for you to not attend your cervical screening examination? <h2>
+
+
+<input type="radio" class= "radiobutton" name"why" value = "1" onClick = "select> You feel embarrassed<br>
+<input type="radio" class= "radiobutton" name"why" value = "2"> YOu haven't shaved or waxed your bikini area<br>
+<input type="radio" class= "radiobutton" name"why" valye = "3"> You would not attend if you had to take time off of work<br>
+<input type="radio" class= "radiobutton" name"why" value = "4"> You would not go if you had to miss the gym<br>
+<input type="radio" class= "radiobutton" name"why" value = "5">You think it is too difficult to make an appointment<br>
+<input type="radio" class= "radiobutton" name"why" value = "6">You don't know where to go for cervical screening<br>
+<input type="radio" class= "radiobutton" name"why" value = "7"> You would rather not know if something was wrong<br>
+<input type="submit" value="Submit">
+
+ <img alt="whyimage" class="whyimage" height="116" src="slide7.jpg" width="194">
+
+
+$(function(){
+    $("#submit").click(function() {     
+        alert(var getValue = $("input[type= 'radio']:checked").val());
+    });
+});
+
+// use this function to get the value to display the correct text or add the text on to the image bit ?
+
+
+$('input:radio[name="why"]').change(
+function(){
+    var $src = "";
+    if ($(this).val() == '1') {
+        $src = "slide1.jpg";
+    }
+    else if ($(this).val() == '2') {
+        $src = "slide4.jpg";
+    }
+    else if ($(this).val() == '3') {
+        $src = "slide2.jpg";
+    }
+    else if ($(this).val() == '4') {
+        $src = "slide3.jpg";
+    }
+
+    else if ($(this).val() == '5') {
+        $src = "slide5.jpg";
+    }
+
+    else if ($(this).val() == '6') {
+        $src = "slide8.jpg";
+    }
+
+    else if ($(this).val() == '7') {
+        $src = "slide6.jpg";
+    }
+
+    else{
+        $src = "slide7.jpg"
+    }
+
+    $('.whyimage').attr('src',$src);
+
+});
