@@ -6,7 +6,7 @@ A flyer has also been included explaining design decisions for the infographics
 
 1) Download all files provided  into a folder 
 
-2) if using google chrome enable cross-origin resource sharing 
+2) If using google chrome enable cross-origin resource sharing 
 
 3) Go in to the folder and double click the map.html file
 
